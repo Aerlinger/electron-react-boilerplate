@@ -13,16 +13,19 @@ class Counter extends Component {
 
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
+    
     return (
       <div>
-        <div className={styles.backButton}>
+        <div className="backButton">
           <Link to="/">
             <i className="fa fa-arrow-left fa-3x" />
           </Link>
         </div>
+        
         <div className={`counter ${styles.counter}`}>
           {counter}
         </div>
+        
         <div className={styles.btnGroup}>
           <button className={styles.btn} onClick={increment}>
             <i className="fa fa-plus" />
